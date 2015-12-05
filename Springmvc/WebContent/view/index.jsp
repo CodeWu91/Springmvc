@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="hello.do" method ="post">
-	hello:<input type="text" name="hello"/>
-	<input type="submit" value="提交"/>
-
-</form>
-
-
+<h1>${helloworld }</h1>
 </body>
 </html>
