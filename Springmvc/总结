@@ -1,3 +1,7 @@
+1.先配置tomcat服务器
+	下载tomcat （使用版本8.0）、
+
+
 springmvc 框架搭建步骤：
 1.创建工程，拷贝springmvc相关jar 到 lib
 2.配置web.xml ，配置前端控制器DispatcherServlet
