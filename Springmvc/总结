@@ -21,8 +21,7 @@
 		打开eclipse->windows->Preferences->server->Runtime environments
 		->add->apache->tomcat8.0
 4.安装spring插件（STS）spring tools suit
-	（百度）
-	http://jingyan.baidu.com/album/1612d5005fd087e20f1eee10.html?picindex=1
+	help-->Eclipse Marketplace->find 里面输入 spring 然后找到最新的 STS 安装即可
 //==========================配置完成
 
 springmvc 框架搭建步骤：
