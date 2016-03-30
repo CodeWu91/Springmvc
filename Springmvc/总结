@@ -7,17 +7,23 @@
 2.下载eclipse （使用版本 mars1 JAVA EE）(http://www.eclipse.org/downloads/)
 
 
-2.先配置tomcat服务器
-	下载tomcat （使用版本8.0）（http://tomcat.apache.org/）
-	左边找到Downloads->Tomcat 8.0->主界面的Binary Distributions->core->32-bit/64-bit Windows Service Installer
-	下载完 这个exe文件后安装即可
-	Tomcat 环境变量设置
-	新增 环境变量
-		 名： CATALINA_HOME
-		 值为Tomcat的安装目录（eg.D:\eclipse\Tomcat 8.0）
-		点击安装目录下的 bin 目录下的Tomcat8w.exe
-		如果跳出 Apache的欢迎页 即表示成功
-		
+3.先配置tomcat服务器
+	3.1下载tomcat （使用版本8.0）（http://tomcat.apache.org/）
+		左边找到Downloads->Tomcat 8.0->主界面的Binary Distributions->core->32-bit/64-bit Windows Service Installer
+		下载完 这个exe文件后安装即可
+		Tomcat 环境变量设置
+		新增 环境变量
+		 	名： CATALINA_HOME
+		 	值为Tomcat的安装目录（eg.D:\eclipse\Tomcat 8.0）
+			点击安装目录下的 bin 目录下的Tomcat8w.exe
+			如果跳出 Apache的欢迎页 即表示成功
+	3.2 eclipse的tomcat配置
+		打开eclipse->windows->Preferences->server->Runtime environments
+		->add->apache->tomcat8.0
+4.安装spring插件（STS）spring tools suit
+	（百度）
+	http://jingyan.baidu.com/album/1612d5005fd087e20f1eee10.html?picindex=1
+//==========================配置完成
 
 springmvc 框架搭建步骤：
 1.创建工程，拷贝springmvc相关jar 到 lib
