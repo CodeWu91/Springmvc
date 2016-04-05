@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="hello.do" method ="post">
-	hello:<input type="text" name="userName"/>
+	hello:<input type="text" name="userNam"/>
 	<input type="submit" value="提交"/>
 
 </form>
