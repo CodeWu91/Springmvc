@@ -1,21 +1,20 @@
 package com.liu.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
+@Controller
+public class HelloController {
 
-public class HelloController extends AbstractController {
-
-	@Override
-	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	@RequestMapping(value="/hello.do")
+	public String hello(String  userName,Model model )
+	{
 		
-		String hello = request.getParameter("hello");
-		System.out.print("-----:"+hello);
-		ModelAndView mav=  new ModelAndView("index");
-		mav.addObject("helloworld", "hello "+ hello);
-		return mav;
+		System.out.println("");
+		model.addAttribute("helloworld", "Hello:"+ userName);
+		
+		return "index";
 	}
 
 	
