@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="hello.do" method ="post">
-	hello:<input type="text" name="sdfsfd"/>
+	hello:<input type="text" name="userName"/>
 	<input type="submit" value="提交"/>
 
 </form>
@@ -16,6 +16,5 @@
  	<a href="user.do">根据beanname访问Controller</a><br/>   
     <a href="userInfo.do">根据URL访问Controller</a><br/>
      <a href="userController.do">根据Controller类名访问Controller</a>   
-     <a href="userController.do">根据Controller类名访问Controller</a>  
 </body>
 </html>
