@@ -12,7 +12,28 @@
 
 <mvc:annotation-driven/>
 <context:component-scan base-package="com"/>
+<!--   第一种 默认的 根据beanname找到对应Controller
+<bean class ="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping"> </bean>
 
+-->
+
+<!-- 第二种  根据简单URL来查找Controller
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/userInfo.do">userController</prop>
+			</props>
+			
+		</property>
+	
+	
+	</bean>
+	<bean id="userController"  name ="/user.do" class="com.liu.controller.UserController"></bean>
+ -->
+ 
+<!-- 第三种 控制类的类名访问Controller， 访问时类名首字母需要小写 -->
+  	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"></bean>
+	<bean class="com.liu.controller.UserController"></bean>
 <!-- 配置视图解释器 -->
 <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<!-- 前缀 -->
