@@ -16,6 +16,8 @@
 		 	名： CATALINA_HOME
 		 	值为Tomcat的安装目录（eg.D:\eclipse\Tomcat 8.0）
 			点击安装目录下的 bin 目录下的Tomcat8w.exe
+			点击start
+			在浏览器里输入http://localhost:8080/
 			如果跳出 Apache的欢迎页 即表示成功
 	3.2 eclipse的tomcat配置
 		打开eclipse->windows->Preferences->server->Runtime environments
